@@ -1,0 +1,9 @@
+description: >- # this means to ignore newlines until "baseurl:"
+  Personal website of Théana Verwaerde: Programmer
+baseurl: ""
+url: "https://www.theanaverwaerde.dev" 
+
+ignore_theme_config: true
+
+exclude:
+  - README.md

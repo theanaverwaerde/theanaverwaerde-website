@@ -1,0 +1,15 @@
+- name: X
+  link: https://x.com/TheanaTwaerd/
+  icon: x
+- name: GitHub
+  link: https://github.com/theanaverwaerde/
+  icon: github
+- name: LinkedIn
+  link: https://www.linkedin.com/in/theanaverwaerde/
+  icon: linkedin
+- name: Itch.io
+  link: https://theanaverwaerde.itch.io/
+  icon: itchdotio
+#- name: Gamejolt
+#  link: https://gamejolt.com/@Twaerd
+#  icon: gamejolt
