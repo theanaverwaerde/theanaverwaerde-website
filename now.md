@@ -6,7 +6,7 @@ permalink: /now
 
 <!-- On this page I put what I what to highlight -->
 
-{% assign update = '2024-09-15' | date: '%A %d %B %Y' %}
+{% assign update = '2024-11-03' | date: '%A %d %B %Y' %}
 
 # Now
 
@@ -19,14 +19,16 @@ Last updated: **{{ update }}**.
 
 - 📍 I live in France near Lille with my parrot "Joséphine".
 - 💼 I work at [OverSOC](https://www.oversoc.com), a Cybersecurity Startup in an awesome team.
-- 🧠 I'm learning [Go](https://go.dev) with its fabulous mascot.
-- 🎬 I'm always watching a lot of anime, my favorite this season is ["Oshi no Ko" 2nd Season](https://myanimelist.net/anime/55791/Oshi_no_Ko_2nd_Season).
-- 📖 I'm reading ["Sun-Ken Rock"](https://myanimelist.net/manga/8848/Sun-Ken_Rock), it's a manga shōnen written and illustrated by Boichi.
-- 🕹️ I'm playing [Core Keeper](https://store.steampowered.com/app/1621690/Core_Keeper/) with a group of friends.
+- 🧠 I'm learning [Svelte](https://svelte.dev) with SvelteKit.
+- 🎬 My favorite this season is [Blue Box](https://myanimelist.net/anime/57181/Ao_no_Hako).
+- 🎵 About music I'm waiting the new album of [LINKIN PARK "From Zero"](https://music.apple.com/fr/album/from-zero/1766137049?l=en-GB)
+- 🕹️ I've started to play at [Brawl Stars](https://supercell.com/en/games/brawlstars/) on my phone
+- 🕹️ On pc I'm playing [GUILTY GEAR -STRIVE-](https://store.steampowered.com/app/1384160/GUILTY_GEAR_STRIVE/) with the objective of not going 0-2 at EVO France 2025
 
 ## Making
 
-- 🖥️ I'm working on this website (more information on [this](/this) page).
-- ✍️ I try to write a lot of blog posts, but I haven't satisfied :/
+- 🖥️ I'm working on a website for my father's company
+- 🖥️ I'm rework an old project to use more modern stack and practice
+- ✍️ I writing an article about **integrations tests in golang with docker**
 
 This [/now](https://nownownow.com/about) page was inspired by [Derek Silvers](https://sivers.org/)!

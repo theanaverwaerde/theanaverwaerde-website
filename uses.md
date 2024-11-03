@@ -12,7 +12,7 @@ I'm still a geek, I want to have a lot of things
 
 ## 📱 Phone
 
-I al always being with iPhone and I think I never changed now I'm with the iPhone 12 Pro Max because I watch a lot of anime on so I need a big screen, but my charging port is dead so I bought a Rhinoshield Case Magsafe compatible and a Magsafe cable and it's awesome I can grab my phone with my hand without has a cable bothered me
+I am always being with iPhone and I think I never changed now I'm with the iPhone 12 Pro Max because I watch a lot of anime on so I need a big screen, but my charging port is dead so I bought a Rhinoshield Case Magsafe compatible and a Magsafe cable and it's awesome I can grab my phone with my hand without has a cable bothered me
 
 ## ⌨ Keyboard & Mouse
 

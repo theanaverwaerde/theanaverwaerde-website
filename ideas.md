@@ -6,7 +6,7 @@ permalink: /ideas
 
 <!-- On this page I put my todo / my futures projects -->
 
-{% assign update = '2024-09-16' | date: '%A %d %B %Y' %}
+{% assign update = '2024-11-03' | date: '%A %d %B %Y' %}
 
 # Ideas
 
@@ -21,6 +21,7 @@ Last updated: **{{ update }}**.
 
 ## 🕹️ Game Development
 
+- A casual mobile game with Godot and Playfab
 - A game on PICO-8
 - A game with MonoGame
 - Complete Multiplayer architecture with spawning server on demand
