@@ -58,7 +58,7 @@
         </div>
         <div id="header-right">
             <a href="/" class="navigation">Home</a>
-            <!-- <a href="/blog" class="navigation">Blog</a> -->
+            <a href="/blog" class="navigation">Blog</a>
             {% for sm in site.data.social-media %}
             <a href="{{sm.link}}" target="_blank" rel="noopener noreferrer" aria-label="{{sm.name}}" class="social-media-icon">{% include {{sm.icon}}.svg %}</a>
             {% endfor %}

@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+<p class="post-meta">
+  <time pubdate datetime="{{ page.date | date: "%Y-%m-%dT%H:%M:%S%z" }}" aria-label="Publication date">
+    {{ page.date | date: "%B %-d, %Y" }}
+  </time> • By 
+  <a href="/blog" class="author" rel="author" aria-label="Author Théana Verwaerde">Théana Verwaerde</a>
+</p>
+
+<hr>
+
+<article id="post-content">
+  {{ content }}
+</article>
+
+<script src="https://giscus.app/client.js"
+        data-repo="theanaverwaerde/theanaverwaerde-website"
+        data-repo-id="R_kgDOMxny8w"
+        data-category="Blog comments"
+        data-category-id="DIC_kwDOMxny884CqBZN"
+        data-mapping="number"
+        data-term="{{ page.discussion_id }}"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>

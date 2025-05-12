@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400&family=Quicksand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400&family=Quicksand:wght@400..700&family=Fira+Code&display=swap');
 
 :root
 {
@@ -30,28 +30,42 @@ body{
 
 h1{
     font-size: 2.25rem;
-    font-family: "Anek Malayalam";
+    font-family: "Anek Malayalam", sans-serif;
     font-style: normal;
     color: var(--text);
 }
 
 h2{
     font-size: 1.5rem;
-    font-family: "Anek Malayalam";
+    font-family: "Anek Malayalam", sans-serif;
     font-style: normal;
     color: var(--text);
 }
 
 h3{
     font-size: 1.125rem;
-    font-family: "Anek Malayalam";
+    font-family: "Anek Malayalam", sans-serif;
+    font-style: normal;
+    color: var(--text);
+}
+
+h4{
+    font-size: 1rem;
+    font-family: "Anek Malayalam", sans-serif;
+    font-style: normal;
+    color: var(--text);
+}
+
+h5{
+    font-size: 0.875rem;
+    font-family: "Anek Malayalam", sans-serif;
     font-style: normal;
     color: var(--text);
 }
 
 p, li {
     font-size: 1rem;
-    font-family: "Quicksand";
+    font-family: "Quicksand", sans-serif;
     font-style: normal;
     color: var(--text);
 }
@@ -91,7 +105,7 @@ header #logo {
 
 header span#header-title {
     font-size: 1.125rem;
-    font-family: "Quicksand";
+    font-family: "Quicksand", sans-serif;
     font-style: normal;
     font-weight: 700;
     text-decoration: underline;
@@ -108,7 +122,7 @@ header #header-right {
 
 header .navigation {
     font-size: 0.875rem;
-    font-family: "Quicksand";
+    font-family: "Quicksand", sans-serif;
     font-style: normal;
     text-decoration: none;
     color: var(--text);
@@ -150,6 +164,26 @@ header::after {
     border: 1px solid var(--background);
 }
 
+#post-content picture img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.author {
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration: none;
+}
+.author:hover {
+    color: var(--accent);
+}
+
+code {
+    font-family: "Fira Code", monospace;
+    font-size: 0.875rem;
+}
+
 footer {
 	max-width: 800px;
     margin: auto auto 0 auto;
@@ -173,7 +207,7 @@ footer nav ul {
 
 footer nav ul li a {
     font-size: 0.75rem;
-    font-family: "Quicksand";
+    font-family: "Quicksand", sans-serif;
     font-style: normal;
     text-decoration: none;
     color: var(--text);
@@ -186,7 +220,7 @@ footer nav ul li a:hover {
 
 footer span#copyright{
     font-size: 0.625rem;
-    font-family: "Quicksand";
+    font-family: "Quicksand", sans-serif;
     font-style: normal;
     color: var(--text);
 }

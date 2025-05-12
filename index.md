@@ -10,14 +10,13 @@ permalink: /
 
 I am a software and game developer based in France.
 
-This website is in progress, but you already have some pages:
+## Latest Posts
 
-- [/about](/about) *in progress*
-- [/now](/now)
-- [/ideas](/ideas)
-- [/this](/this)
-- [/uses](/uses) *in progress*
-- [/404](/not-found)
-- [/blog](/blog) *empty for now*
-
-And I need to work on accessibility and responsive.
+<ul>
+    {% for post in site.posts limit:5 %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <small>{{ post.date | date: "%B %d, %Y" }}</small>
+        </li>
+    {% endfor %}
+</ul>

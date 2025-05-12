@@ -10,6 +10,14 @@ You can see the website here: <https://www.theanaverwaerde.dev/>
 
 ## Run
 
+Run:
+
 ```bash
 bundle exec jekyll serve
+```
+
+Run on network with drafts:
+
+```bash
+bundle exec jekyll serve --host 0.0.0.0 --drafts
 ```

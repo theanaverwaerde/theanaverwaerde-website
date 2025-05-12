@@ -2,6 +2,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Personal website of Théana Verwaerde: Programmer
 baseurl: ""
 url: "https://www.theanaverwaerde.dev" 
+excerpt_separator: "<!-- END OF SUMMARY -->"
+permalink: /:title
 
 ignore_theme_config: true
 
