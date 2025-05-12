@@ -6,7 +6,7 @@ permalink: /now
 
 <!-- On this page I put what I what to highlight -->
 
-{% assign update = '2024-11-03' | date: '%A %d %B %Y' %}
+{% assign update = '2025-05-11' | date: '%A %d %B %Y' %}
 
 # Now
 
@@ -17,18 +17,16 @@ Last updated: **{{ update }}**.
 
 ## Currently
 
-- 📍 I live in France near Lille with my parrot "Joséphine".
+- 📍 I live in France near Lille with my parrot "Joséphine" 🦜.
 - 💼 I work at [OverSOC](https://www.oversoc.com), a Cybersecurity Startup in an awesome team.
-- 🧠 I'm learning [Svelte](https://svelte.dev) with SvelteKit.
-- 🎬 My favorite this season is [Blue Box](https://myanimelist.net/anime/57181/Ao_no_Hako).
-- 🎵 About music I'm waiting the new album of [LINKIN PARK "From Zero"](https://music.apple.com/fr/album/from-zero/1766137049?l=en-GB)
-- 🕹️ I've started to play at [Brawl Stars](https://supercell.com/en/games/brawlstars/) on my phone
-- 🕹️ On pc I'm playing [GUILTY GEAR -STRIVE-](https://store.steampowered.com/app/1384160/GUILTY_GEAR_STRIVE/) with the objective of not going 0-2 at EVO France 2025
+- 🎬 This season in anime my favorite is surely [the third season of Fire Force](https://myanimelist.net/anime/51818/Enen_no_Shouboutai__San_no_Shou).
+- 🕹️ I play at [Clair Obscur: Expedition 33](https://store.steampowered.com/agecheck/app/1903340/), with Lune in my team 🌙.
+- 📺 I'm always watching e-sport matches of [Mandatory](https://www.mandatory.gg) and [Karmine Corp](https://www.karminecorp.fr)!
 
 ## Making
 
-- 🖥️ I'm working on a website for my father's company
-- 🖥️ I'm rework an old project to use more modern stack and practice
-- ✍️ I writing an article about **integrations tests in golang with docker**
+- 🕹️ I developping a mobile game
+- 📺 I'm trying to make a overlay for streaming
+- 🎨 I'm drawing a character for vtubing but it's difficult with my current skill
 
 This [/now](https://nownownow.com/about) page was inspired by [Derek Silvers](https://sivers.org/)!

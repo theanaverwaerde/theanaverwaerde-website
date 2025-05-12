@@ -6,7 +6,7 @@ permalink: /ideas
 
 <!-- On this page I put my todo / my futures projects -->
 
-{% assign update = '2024-11-03' | date: '%A %d %B %Y' %}
+{% assign update = '2025-05-11' | date: '%A %d %B %Y' %}
 
 # Ideas
 
@@ -26,6 +26,11 @@ Last updated: **{{ update }}**.
 - A game with MonoGame
 - Complete Multiplayer architecture with spawning server on demand
 - A game in retro console (NES or Gameboy) in assembly
+
+## ✍️ Writing
+
+- Writing articles about Game Development (Tip or Multiplayer architecture research)
+- 
 
 ## 🔧 DIY
 
