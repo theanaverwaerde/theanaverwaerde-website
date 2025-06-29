@@ -9,3 +9,4 @@ ignore_theme_config: true
 
 exclude:
   - README.md
+  - giscus.json
