@@ -10,3 +10,8 @@ ignore_theme_config: true
 exclude:
   - README.md
   - giscus.json
+  - images/
+
+picture:
+  source: images/
+  output: images/

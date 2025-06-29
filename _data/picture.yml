@@ -1,0 +1,11 @@
+# _data/picture.yml
+
+# These are used in several places. You likely want to enter whatever CSS media queries your site
+# uses here.
+media_queries:
+    dark: 'prefers-color-scheme: dark'
+
+presets:
+  default:
+    formats: [webp, original]
+    dimension_attributes: false
