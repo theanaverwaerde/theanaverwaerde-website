@@ -6,7 +6,7 @@ permalink: /ideas
 
 <!-- On this page I put my todo / my futures projects -->
 
-{% assign update = '2025-05-11' | date: '%A %d %B %Y' %}
+{% assign update = '2025-10-01' | date: '%A %d %B %Y' %}
 
 # Ideas
 
@@ -14,23 +14,28 @@ So many projects I want to do, so my To Do list is here
 
 Last updated: **{{ update }}**.
 
-## 💻 Software Develpment
+## 🌐 This site
+- Mobile friendly
+- Change [rouge](https://rouge.jneen.net) to [shiki](https://shiki.style) for syntax highlighter in blog post
+
+## 🎨 Streaming
+- An overlay for streaming with OBS
+- A Vtuber (or PNGTuber) model for my streams
+
+## 💻 Software Development
 
 - [json-server](https://github.com/theanaverwaerde/json-server), I want to do [typicode/json-server](https://github.com/typicode/json-server), but with only one binary file without needed npm installation
-- faker online, a website to get pertinents fake data in multiple format json/csv/xml, probably with Vue.js or Svelte
+- faker online, a website to get pertinents fake data in multiple format json/csv/xml, probably with Svelte
 
 ## 🕹️ Game Development
 
-- A casual mobile game with Godot and Playfab
 - A game on PICO-8
-- A game with MonoGame
 - Complete Multiplayer architecture with spawning server on demand
 - A game in retro console (NES or Gameboy) in assembly
 
 ## ✍️ Writing
 
 - Writing articles about Game Development (Tip or Multiplayer architecture research)
-- 
 
 ## 🔧 DIY
 
