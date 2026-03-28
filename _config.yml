@@ -1,5 +1,5 @@
 description: >- # this means to ignore newlines until "baseurl:"
-  Personal website of Théana Verwaerde: Programmer
+  Personal website of Théana Verwaerde, software and game developer
 baseurl: ""
 url: "https://www.theanaverwaerde.dev" 
 excerpt_separator: "<!-- END OF SUMMARY -->"

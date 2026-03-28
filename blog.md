@@ -12,7 +12,9 @@ permalink: /blog
 
 ## [{{ post.title }}]({{ post.redirect_to | default: post.url }})
 
-{{ post.excerpt }}
+{{ post.summary }}
 
-[Read more]({{ post.redirect_to | default: post.url }})
+
+*Posted on {{ post.date | date: "%B %-d, %Y" }}*
+
 {% endfor %}

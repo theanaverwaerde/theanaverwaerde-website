@@ -6,6 +6,8 @@
     --secondary: #60e294;
     --accent: #bd92d8;
     --background:#fcfffa;
+    --bg-variant1: #f5f7fa;
+    --bg-variant2: #e9f6f2;
     --text:#171a26;
 }
 
@@ -15,6 +17,8 @@
         --primary: #60e294;
         --secondary: #7acdb9;
         --background:#171a26;
+        --bg-variant1: #23262f;
+        --bg-variant2: #1b1e27;
         --text:#fcfffa;
     }
 }
@@ -70,7 +74,7 @@ p, li {
     color: var(--text);
 }
 
-p a, li a {
+p a, li a, h2 a {
     color: var(--primary);
 }
 
@@ -179,9 +183,56 @@ header::after {
     color: var(--accent);
 }
 
+.highlighter-rouge:not(code) {
+    border-left-width: 4px;
+    border-left-style: solid;
+}
+
+.language-csharp {
+    border-left-color: #512bd4;
+}
+
+.language-json {
+    border-left-color: #F7DF1E;
+}
+
+.language-go {
+    border-left-color: #00ADD8;
+}
+
+pre {
+    padding: 20px;
+    text-wrap: wrap;
+}
+
 code {
     font-family: "Fira Code", monospace;
     font-size: 0.875rem;
+}
+
+table {
+    font-family: "Quicksand", sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--text);
+}
+
+th, td {
+    padding: 0.5em 1em;
+    border: 1px solid var(--primary);
+}
+
+th {
+    color: var(--text);
+    background: var(--primary);
+}
+
+tbody tr:nth-child(even) {
+    background: var(--bg-variant1);
+}
+
+tbody tr:nth-child(odd) {
+    background: var(--bg-variant2);
 }
 
 footer {
