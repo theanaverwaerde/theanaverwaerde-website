@@ -46,8 +46,9 @@
     <meta name="twitter:site" content="@TheanaTwaerd">
     <meta name="twitter:creator" content="@TheanaTwaerd">
 
-    <!-- Robots -->
-    <meta name="robots" content="noimageindex" />
+    {% if jekyll.environment == "production" %}<!-- Analytics -->
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="319c7a3a-838c-4925-a8b4-ce373c4535ed"></script>{% endif %}
+
 </head>
 
 <body>

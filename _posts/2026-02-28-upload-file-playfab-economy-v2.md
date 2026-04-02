@@ -18,8 +18,8 @@ I use [C# PlayFab SDK ](https://www.nuget.org/packages/PlayFabAllSDK/) as exampl
 You need to have a entity token, with your Title Id and your Secret Key
 If you not yet have your secret key you can get it on your Dashboard -> Settings -> Secret Keys and you can generate a new one.
 ```csharp
-PlayFabSettings.staticSettings.TitleId = Environment.GetEnvironmentVariable("TitleId");  
-PlayFabSettings.staticSettings.DeveloperSecretKey = Environment.GetEnvironmentVariable("SecretKey");  
+PlayFabSettings.staticSettings.TitleId = Environment.GetEnvironmentVariable("TitleId");
+PlayFabSettings.staticSettings.DeveloperSecretKey = Environment.GetEnvironmentVariable("SecretKey");
 await PlayFabAuthenticationAPI.GetEntityTokenAsync(new GetEntityTokenRequest());
 ```
 
@@ -30,12 +30,12 @@ On the body, you can request many urls in one time Files field is a List\<Upload
 ```csharp
 PlayFabResult<CreateUploadUrlsResponse>? urls = await PlayFabEconomyAPI.CreateUploadUrlsAsync(new CreateUploadUrlsRequest()
 {
-    Files = [  
-        new UploadInfo  
-        {  
-            FileName = "example.txt"   
-		}
-    ]  
+    Files = [
+        new UploadInfo
+        {
+            FileName = "example.txt"
+        }
+    ]
 });
 ```
 ## Put your file with Azure Endpoints
@@ -44,16 +44,16 @@ In C# we need a HttpClient to put do this call cause C# PlayFab SDK doesn't prov
 
 For your Put you need a header `x-ms-blob-type` value can be BlockBlob, PageBlob or AppendBlob. You can check what you need on [doc](https://learn.microsoft.com/en-us/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs)
 ```csharp
-HttpClient httpClient = new HttpClient();  
+HttpClient httpClient = new HttpClient();
 
-foreach (UploadUrlMetadata url in urls.Result.UploadUrls)  
+foreach (UploadUrlMetadata url in urls.Result.UploadUrls)
 {
-    byte[] fileBytes = await File.ReadAllBytesAsync(file.FullName);   
+    byte[] fileBytes = await File.ReadAllBytesAsync(file.FullName);
     ByteArrayContent content = new ByteArrayContent(fileBytes)
-    {  
-        Headers = { { "x-ms-blob-type", "BlockBlob" } }  
+    {
+        Headers = { { "x-ms-blob-type", "BlockBlob" } }
     };
-  
+    
     HttpResponseMessage res = await httpClient.PutAsync(url.Url, content);
     // Throws an exception if the IsSuccessStatusCode property for the HTTP response is false.
     res.EnsureSuccessStatusCode();
@@ -65,18 +65,18 @@ foreach (UploadUrlMetadata url in urls.Result.UploadUrls)
 Finally you can use Ids and Urls from the response of [Create Upload Urls](#create-upload-urls) in for create or update an item
 
 ```csharp
-PlayFabResult<CreateDraftItemResponse>? draftItem = await PlayFabEconomyAPI.CreateDraftItemAsync(new CreateDraftItemRequest()  
-{  
-    Item = new CatalogItem  
-    {  
-        ...,  
-        Contents =  
+PlayFabResult<CreateDraftItemResponse>? draftItem = await PlayFabEconomyAPI.CreateDraftItemAsync(new CreateDraftItemRequest()
+{
+    Item = new CatalogItem
+    {
+        ...,
+        Contents =
         [
-            new Content  
-            {  
-                Id = url.Id,  
-                Url = url.Url  
-            }  
+            new Content
+            {
+                Id = url.Id,
+                Url = url.Url
+            }
         ]
     }
 });

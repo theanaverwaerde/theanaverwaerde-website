@@ -4,7 +4,6 @@ layout: post
 summary: Learn why and how to make a pagination cursor-based for your APIs
 title: Why and how to make a pagination cursor-based?
 ---
-
 ## Why use pagination?
 
 When you read a book you don't want to have all the text in only one page, we split the content into many pages to easily browse and read information.
