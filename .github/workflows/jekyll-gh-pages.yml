@@ -26,20 +26,29 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Install JPT's dependencies
-        run: sudo apt-get update && sudo apt-get install -y libvips-tools
       - name: Checkout
         uses: actions/checkout@v6
+      - name: Install JPT's dependencies
+        run: sudo apt-get update && sudo apt-get install -y libvips-tools
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: 'npm'
+      - name: Install JS dependencies
+        run: npm install
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.4' # Not needed with a .ruby-version, .tool-versions or mise.toml
+          ruby-version: "3.4" # Not needed with a .ruby-version, .tool-versions or mise.toml
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
       - name: Setup Pages
         uses: actions/configure-pages@v6
       - name: Build with Jekyll
-        run: JEKYLL_ENV=production bundle exec jekyll build
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
 
