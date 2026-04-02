@@ -6,7 +6,7 @@ permalink: /ideas
 
 <!-- On this page I put my todo / my futures projects -->
 
-{% assign update = '2025-10-01' | date: '%A %d %B %Y' %}
+{% assign update = '2026-04-03' | date: '%A %d %B %Y' %}
 
 # Ideas
 
@@ -16,7 +16,6 @@ Last updated: **{{ update }}**.
 
 ## 🌐 This site
 - Mobile friendly
-- Change [rouge](https://rouge.jneen.net) to [shiki](https://shiki.style) for syntax highlighter in blog post
 
 ## 🎨 Streaming
 - An overlay for streaming with OBS
@@ -41,5 +40,6 @@ Last updated: **{{ update }}**.
 
 - A Stick Arcade Controller with Pandora Box inside for playing where I want if I have a screen and power supply
 - Modding of Nintendo Switch Pro Controller
+- Buy and mod a Gameboy
 
 Inspired by [aboutideasnow.com](https://aboutideasnow.com/about).

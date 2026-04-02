@@ -1,0 +1,24 @@
+{
+  "name": "theanaverwaerde-website",
+  "version": "1.0.0",
+  "description": "You can see the website here: <https://www.theanaverwaerde.dev/>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theanaverwaerde/theanaverwaerde-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/theanaverwaerde/theanaverwaerde-website/issues"
+  },
+  "homepage": "https://github.com/theanaverwaerde/theanaverwaerde-website#readme",
+  "dependencies": {
+    "shiki": "^4.0.2"
+  }
+}

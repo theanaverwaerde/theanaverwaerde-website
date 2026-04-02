@@ -1,84 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400&family=Quicksand:wght@400..700&family=Fira+Code&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400&family=Quicksand:wght@400..700&family=Fira+Code&display=swap");
 
-:root
-{
+:root {
     --primary: #7acdb9;
     --secondary: #60e294;
     --accent: #bd92d8;
-    --background:#fcfffa;
+    --background: #fcfffa;
     --bg-variant1: #f5f7fa;
     --bg-variant2: #e9f6f2;
-    --text:#171a26;
+    --text: #171a26;
 }
 
-@media (prefers-color-scheme: dark)
-{
+@media (prefers-color-scheme: dark) {
     :root {
         --primary: #60e294;
         --secondary: #7acdb9;
-        --background:#171a26;
+        --background: #171a26;
         --bg-variant1: #23262f;
         --bg-variant2: #1b1e27;
-        --text:#fcfffa;
+        --text: #fcfffa;
     }
 }
 
-html{
+html {
     background-color: var(--background);
 }
 
-body{
+body {
     margin: 0;
     min-height: 100dvh;
 }
 
-h1{
+h1 {
     font-size: 2.25rem;
     font-family: "Anek Malayalam", sans-serif;
     font-style: normal;
     color: var(--text);
 }
 
-h2{
+h2 {
     font-size: 1.5rem;
     font-family: "Anek Malayalam", sans-serif;
     font-style: normal;
     color: var(--text);
 }
 
-h3{
+h3 {
     font-size: 1.125rem;
     font-family: "Anek Malayalam", sans-serif;
     font-style: normal;
     color: var(--text);
 }
 
-h4{
+h4 {
     font-size: 1rem;
     font-family: "Anek Malayalam", sans-serif;
     font-style: normal;
     color: var(--text);
 }
 
-h5{
+h5 {
     font-size: 0.875rem;
     font-family: "Anek Malayalam", sans-serif;
     font-style: normal;
     color: var(--text);
 }
 
-p, li {
+p,
+li {
     font-size: 1rem;
     font-family: "Quicksand", sans-serif;
     font-style: normal;
     color: var(--text);
 }
 
-p a, li a, h2 a {
+p a,
+li a,
+h2 a {
     color: var(--primary);
 }
 
-p a:hover, li a:hover {
+p a:hover,
+li a:hover {
     color: var(--secondary);
 }
 strong {
@@ -91,7 +93,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 102px;
-	max-width: 800px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -103,7 +105,7 @@ header #header-left a {
 }
 
 header #logo {
-	width: 80px;
+    width: 80px;
     fill: var(--text);
 }
 
@@ -139,15 +141,15 @@ header .navigation:hover {
 }
 
 header .social-media-icon {
-	fill: var(--text);
-	width: 20px;
-	height: 20px;
+    fill: var(--text);
+    width: 20px;
+    height: 20px;
 }
 
 header .social-media-icon:hover {
-	fill: var(--text);
-	width: 20px;
-	height: 20px;
+    fill: var(--text);
+    width: 20px;
+    height: 20px;
 }
 
 header::after {
@@ -162,7 +164,7 @@ header::after {
 }
 
 #content {
-	max-width: 798px;
+    max-width: 798px;
     margin: 0 auto;
     min-height: calc(100dvh - 164px);
     border: 1px solid var(--background);
@@ -183,9 +185,18 @@ header::after {
     color: var(--accent);
 }
 
-.highlighter-rouge:not(code) {
+@media (prefers-color-scheme: dark) {
+    .shiki,
+    .shiki span {
+        color: var(--shiki-dark) !important;
+        background-color: var(--shiki-dark-bg) !important;
+    }
+}
+
+.shiki {
     border-left-width: 4px;
     border-left-style: solid;
+    border-bottom-right-radius: 16px;
 }
 
 .language-csharp {
@@ -193,11 +204,11 @@ header::after {
 }
 
 .language-json {
-    border-left-color: #F7DF1E;
+    border-left-color: #f7df1e;
 }
 
 .language-go {
-    border-left-color: #00ADD8;
+    border-left-color: #00add8;
 }
 
 pre {
@@ -217,7 +228,8 @@ table {
     color: var(--text);
 }
 
-th, td {
+th,
+td {
     padding: 0.5em 1em;
     border: 1px solid var(--primary);
 }
@@ -236,7 +248,7 @@ tbody tr:nth-child(odd) {
 }
 
 footer {
-	max-width: 800px;
+    max-width: 800px;
     margin: auto auto 0 auto;
     display: flex;
     flex-direction: column;
@@ -269,7 +281,7 @@ footer nav ul li a:hover {
     text-decoration: underline;
 }
 
-footer span#copyright{
+footer span#copyright {
     font-size: 0.625rem;
     font-family: "Quicksand", sans-serif;
     font-style: normal;

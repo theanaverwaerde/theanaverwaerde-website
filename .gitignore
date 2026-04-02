@@ -4,5 +4,7 @@ _site
 .jekyll-metadata
 vendor
 
+node_modules/
+
 # MacOS system file
 .DS_Store

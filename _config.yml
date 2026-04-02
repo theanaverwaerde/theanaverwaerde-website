@@ -1,7 +1,7 @@
 description: >- # this means to ignore newlines until "baseurl:"
   Personal website of Théana Verwaerde, software and game developer
 baseurl: ""
-url: "https://www.theanaverwaerde.dev" 
+url: "https://www.theanaverwaerde.dev"
 excerpt_separator: "<!-- END OF SUMMARY -->"
 permalink: /:title
 
@@ -11,6 +11,8 @@ exclude:
   - README.md
   - giscus.json
   - images/
+  - package.json
+  - package-lock.json
 
 picture:
   source: images/
