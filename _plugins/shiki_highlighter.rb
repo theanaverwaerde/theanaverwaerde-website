@@ -4,9 +4,9 @@ Jekyll::Hooks.register :posts, :pre_render do |post|
 
   regex = /```(\w+)\n(.*?)\n\s*```/m
 
-  post.content.gsub!(regex) do |match|
-    lang = $1
-    code = $2
+  post.content.gsub!(regex) do
+    lang = Regexp.last_match(1)
+    code = Regexp.last_match(2)
 
     highlight_code(code, lang)
   end
@@ -44,11 +44,9 @@ def highlight_code(code, lang)
     run();
   JS
 
-  stdout, stderr, status = Open3.capture3("node", stdin_data: js_script)
+  stdout, stderr, status = Open3.capture3('node', stdin_data: js_script)
 
-  if status.success?
-    return stdout
-  else
-    raise "Shiki Error: #{stderr}"
-  end
+  raise "Shiki Error: #{stderr}" unless status.success?
+
+  stdout
 end

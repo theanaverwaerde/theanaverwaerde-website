@@ -5,6 +5,9 @@ url: "https://www.theanaverwaerde.dev"
 excerpt_separator: "<!-- END OF SUMMARY -->"
 permalink: /blog/:title
 
+plugins:
+  - jekyll-sitemap
+
 ignore_theme_config: true
 
 exclude:
