@@ -10,3 +10,5 @@ permalink: /about
 
 On this page, you can have a large information about me.
 For fresh information only you can visit my [now](/now) page!
+
+But I need to write it

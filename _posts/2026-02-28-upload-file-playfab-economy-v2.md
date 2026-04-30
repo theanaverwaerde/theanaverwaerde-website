@@ -1,7 +1,7 @@
 ---
 layout: post
-summary: How to upload file on Playfab Economy v2 via API
 title: Upload a file for Item in PlayFab Catalog V2
+summary: How to upload file on Playfab Economy v2 via API
 discussion_id: 3
 ---
 The official documentation doesn't explain in detail how to upload a file for an Item in PlayFab Catalog V2, so after some research here's the method I found

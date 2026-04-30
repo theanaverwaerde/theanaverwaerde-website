@@ -19,7 +19,7 @@ This website is hosted on **Github Pages** using [**Jekyll**](https://jekyllrb.c
 
 ## Development Environment
 
-For the development of this website, I’m using [**Visual Studio Code**](https://code.visualstudio.com) with the Light Modern theme (Yes, I’m on the light theme gang).
+For the development of this website, I’m using [**Zed**](https://zed.dev) with [Catppuccin Latte theme](https://github.com/catppuccin/zed) (Yes, I’m on the light theme gang).
 
 ## Languages Used
 
