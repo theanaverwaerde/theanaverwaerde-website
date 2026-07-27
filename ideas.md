@@ -6,7 +6,7 @@ permalink: /ideas
 
 <!-- On this page I put my todo / my futures projects -->
 
-{% assign update = '2026-04-03' | date: '%A %d %B %Y' %}
+{% assign update = '2026-07-27' | date: '%A %d %B %Y' %}
 
 # Ideas
 
@@ -24,17 +24,24 @@ Last updated: **{{ update }}**.
 ## 💻 Software Development
 
 - [json-server](https://github.com/theanaverwaerde/json-server), I want to do [typicode/json-server](https://github.com/typicode/json-server), but with only one binary file without needed npm installation
-- faker online, a website to get pertinents fake data in multiple format json/csv/xml, probably with Svelte
+- faker online, a website to get pertinents fake data in multiple format json/csv/xml, probably with [Svelte](https://svelte.dev)
 
 ## 🕹️ Game Development
 
-- A game on PICO-8
+- A game on [PICO-8](https://www.lexaloffle.com/pico-8.php)
 - Complete Multiplayer architecture with spawning server on demand
 - A game in retro console (NES or Gameboy) in assembly
+- A game with [Pygame](https://www.pygame.org/)
+- A desktop 3D game with [FNA](https://fna-xna.github.io)
 
-## ✍️ Writing
+## 👩‍💻 Other Development
+- Binding of Live2D for XNA project
 
-- Writing articles about Game Development (Tip or Multiplayer architecture research)
+## ✍️ Blog Topics
+
+- Game Development (Tip or Multiplayer architecture research)
+- Mobile game dev with XNA (FNA/Monogame)
+- Post-mortem for different projects
 
 ## 🔧 DIY
 

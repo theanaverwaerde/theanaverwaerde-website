@@ -16,6 +16,7 @@ exclude:
   - images/
   - package.json
   - package-lock.json
+  - .zed/
 
 picture:
   source: images/

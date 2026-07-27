@@ -1,0 +1,14 @@
+[
+  {
+  "label": "Run",
+  "command": "bundle exec jekyll serve --host localhost",
+  "use_new_terminal": false,
+  "allow_concurrent_runs": false
+  },
+  {
+  "label": "Run with devtunnel",
+  "command": "devtunnel user login -g;(bundle exec jekyll serve --host localhost & devtunnel host -p 4000 -a)",
+  "use_new_terminal": false,
+  "allow_concurrent_runs": false
+  }
+]

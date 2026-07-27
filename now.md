@@ -6,7 +6,7 @@ permalink: /now
 
 <!-- On this page I put what I what to highlight -->
 
-{% assign update = '2026-04-30' | date: '%A %d %B %Y' %}
+{% assign update = '2026-07-27' | date: '%A %d %B %Y' %}
 
 # Now
 
@@ -18,11 +18,13 @@ Last updated: **{{ update }}**.
 ## Currently
 
 - 📍 I live in France near Lille with my parrot "Joséphine" 🦜.
-- 🎬 At the moment during this season my favorite anime is [Marriagetoxin](https://myanimelist.net/anime/62601/Marriagetoxin)
+- 🎬 An aduld romance anime is rare so it's my fav this season [Smoking Behind the Supermarket with You](https://myanimelist.net/anime/62076/Super_no_Ura_de_Yani_Suu_Futari)
 - 📺 I'm always watching e-sport matches of [Mandatory](https://www.mandatory.gg) and [Karmine Corp](https://www.karminecorp.fr)!
 
 ## Making
 
-- 🕹️ I developping a mobile game with MonoGame and Nakama
+- 💜 I making a romance game for [ROMANCE JAM 2026](https://itch.io/jam/romance-jam-2026) with 3 others peoples on [Ren'py](https://www.renpy.org)
+- 🕹️ I developping a mobile game with [MonoGame](https://monogame.net) and [Nakama](https://heroiclabs.com/nakama/)
+- 🎨 Re design this website
 
 This [/now](https://nownownow.com/about) page was inspired by [Derek Silvers](https://sivers.org/)!

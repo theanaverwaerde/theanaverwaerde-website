@@ -6,15 +6,16 @@ permalink: /
 
 <!-- On this page I put what I want to highlight -->
 
-# Hey, I'm **Théana**
+# Hey, I'm **Théana** 👋
 
-I am a software and game developer based in France.
+Software & Game developer
 
 ## My latest project
 
-It's a walking sim game made in 72h during the LD59 with a friend
+For my second Kenney Jam, I've made a game in 50h with a designer,<br />
+Game made with [Godot Engine](https://godotengine.org)
 
-[Play on your browser here<br><br><img src="https://static.jam.host/content/cfb/71/z/71818.png.948x533.fit.jpg" alt="Cover image of the game" width="400" loading="lazy">](https://ldjam.com/events/ludum-dare/59/lowsignal)
+<iframe frameborder="0" src="https://itch.io/embed/4794159?bg_color=30305e&amp;fg_color=ffffff&amp;link_color=00d1ff&amp;border_color=585886" width="208" height="167"><a href="https://theanaverwaerde.itch.io/smsmsg2-dx">SMSMSG2 DX by Théana, AmauryH</a></iframe>
 
 
 ## Latest Posts

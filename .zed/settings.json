@@ -1,0 +1,10 @@
+{
+  "file_scan_exclusions": [
+    ".jekyll-cache",
+    ".git",
+    "**/.DS_Store",
+    "node_modules",
+    "Gemfile.lock",
+    "package-lock.json",
+  ]
+}
