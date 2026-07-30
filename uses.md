@@ -16,7 +16,7 @@ I am always being with iPhone and I currently have an iPhone 15 Pro.
 
 My keyboard is different what computer I'm using.
 When I'm using my [laptop](#-laptop), I use an Apple Magic Keyboard.
-When I'm using my [desktop](#️-desktop), I have an ergonomic keyboard, ZSA Moonlander with a [custom configuration](https://configure.zsa.io/moonlander/layouts/LqRnX/latest/0).
+When I'm using my [desktop](#-desktop), I have an ergonomic keyboard, ZSA Moonlander with a [custom configuration](https://configure.zsa.io/moonlander/layouts/LqRnX/latest/0).
 
 And for the mouse I use the Logitech MX Vertical, before i having the first price Amazon ergonomic mouse to try and after 2 years I decided to get more quality stuff so I buy it
 

@@ -6,8 +6,24 @@
   "allow_concurrent_runs": false
   },
   {
+    "label": "Run with drafts",
+    // "command": "bundle exec jekyll serve --host localhost --drafts",
+    "command": "cp -r $ZED_WORKTREE_ROOT/images/. $ZED_WORKTREE_ROOT/imagesPost;cp -r $ZED_WORKTREE_ROOT/imagesDraft/. $ZED_WORKTREE_ROOT/images;bundle exec jekyll serve --host localhost --drafts;rm -r $ZED_WORKTREE_ROOT/images;mv $ZED_WORKTREE_ROOT/imagesPost $ZED_WORKTREE_ROOT/images",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false
+  },
+  {
   "label": "Run with devtunnel",
   "command": "devtunnel user login -g;(bundle exec jekyll serve --host localhost & devtunnel host -p 4000 -a)",
+  "use_new_terminal": false,
+  "allow_concurrent_runs": false
+  },
+  {
+  "label": "Build for prod",
+  "command": "bundle exec jekyll build",
+  "env": {
+    "JEKYLL_ENV": "production"
+  },
   "use_new_terminal": false,
   "allow_concurrent_runs": false
   }

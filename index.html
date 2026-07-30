@@ -1,0 +1,85 @@
+---
+layout: default
+title: Home
+permalink: /
+---
+
+<!-- Hero -->
+
+<div id="hero" class="home-section">
+    <h1>Hey, I'm <strong>Théana</strong> 👋</h1>
+    <h2>Software & Game developer, Writer <em>and many more</em></h2>
+    <div class="button-group">
+        <a href="#highlight">View my Projects</a>
+        <a href="/blog">Read the Blog</a>
+    </div>
+</div>
+
+<!-- Highlight -->
+
+<div id="highlight" class="home-section">
+    <h2 class="section-name">Highlight</h2>
+
+    {% for item in site.data.highlight limit:4 %}
+    {% include highlight.html hl=item checked=forloop.first %}
+    {% endfor %}
+</div>
+
+<!-- Recent posts -->
+
+<div id="posts" class="home-section">
+    <h2 class="section-name">My {{ site.posts | size | at_most: 5 }} latest posts</h2>
+
+    <ul>
+        {% for post in site.posts limit:5 %}
+        <li>
+            <p>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+                <small>{{ post.date | date: "%B %d, %Y" }}
+                <br />
+                {{ post.summary }}</small>
+            </p>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<!-- About me -->
+
+<div id="about-me" class="home-section">
+    <h2 class="section-name">About Me</h2>
+
+    <!-- Maybe add a picture? -->
+    <p>
+        Always tinkering with my computer, creating a game, testing a new language or software architecture, or simply thinking what I could test next.<br />
+        Welcome to my little web corner!
+        <!--<br /><br />
+        <a href="/about">Learn more about me</a>-->
+    </p>
+
+    <div>
+        {% for sm in site.data.social-media %}
+        <a href="{{sm.link}}" target="_blank" rel="noopener noreferrer" aria-label="{{sm.name}}" class="social-media-icon">{% include {{sm.icon}}.svg %}</a>
+        {% endfor %}
+    </div>
+</div>
+
+
+<script>
+  document.querySelectorAll('.highlight').forEach(card => {
+    card.addEventListener('click', (e) => {
+      const radio = card.querySelector('input[type="radio"]');
+      if (radio.checked) {
+        return;
+      }
+      
+      if (document.startViewTransition) {
+        e.preventDefault();
+        
+        document.startViewTransition(() => {
+          radio.checked = true;
+        });
+      }
+    });
+  });
+</script>

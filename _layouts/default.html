@@ -50,19 +50,27 @@
 <body>
 
     <header>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
         <div id="header-left">
             <a href="/">
                 <div id="logo">{% include logo.svg %}</div>
-                <span id="header-title">Théana Verwaerde</h1>
+                <span id="header-title">Théana</span>
             </a>
         </div>
-        <div id="header-right">
+        <nav id="header-right">
             <a href="/" class="navigation">Home</a>
             <a href="/blog" class="navigation">Blog</a>
             {% for sm in site.data.social-media %}
             <a href="{{sm.link}}" target="_blank" rel="noopener noreferrer" aria-label="{{sm.name}}" class="social-media-icon">{% include {{sm.icon}}.svg %}</a>
             {% endfor %}
-        </div>
+        </nav>
+
+        <label class="burger" for="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
     </header>
 
     <div id="content">

@@ -1,0 +1,24 @@
+- name: SMSMSG2 DX
+  type: Game Jam
+  description: |
+      Game made with Godot Engine in 50h for the Kenney Jam 2026, the theme was "Scale".
+      This is my second game with Godot and this time I've worked with a designer (no artist needed cause during the Kenney Jam we can use only pre-made assets by Kenney or KayKit).
+      I've learned a lot about Godot's animation tree. At first, it was complicated because it's quite different from Unity, but it was really enjoyable once I got the hang of it.
+  image: https://img.itch.zone/aW1nLzI4NTkwOTkzLnBuZw==/315x250%23c/HMWhtv.png
+  links:
+    - name: Play on itch.io
+      href: https://theanaverwaerde.itch.io/smsmsg2-dx
+    - name: View Source Code
+      href: https://github.com/theanaverwaerde/kenney-jam-2026
+- name: LowSignal
+  type: Game Jam
+  description: |
+      First game made with Godot Engine in 72h for the Ludum Dare 59 with an 3d artist (first time on Godot for her too), the theme was "Signal".
+      A lot of small difficulties from this first project, about performance (running an outdoor 3d game on web is quite heavy), the phone on the game because we are interacting in a 2d element with a 3d scene.
+      But a lot of new things were learned like the base of shader on Godot, all the node logic of Godot. Globally it's a really good experience this not be my last Godot game for a jam!
+  image: https://img.itch.zone/aW1nLzI2ODI0MjA1LnBuZw==/315x250%23c/uQK1hf.png
+  links:
+    - name: Play on itch.io
+      href: https://theanaverwaerde.itch.io/low-signal
+    - name: View Source Code
+      href: https://github.com/theanaverwaerde/low-signal-ld59

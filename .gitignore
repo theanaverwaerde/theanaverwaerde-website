@@ -8,3 +8,7 @@ node_modules/
 
 # MacOS system file
 .DS_Store
+
+# Draft symbolically link (cause on my cloud)
+_drafts
+imagesDraft

@@ -1,0 +1,13 @@
+<label class="highlight">
+    <input type="radio" name="highlight"  {% if include.checked %}checked{% endif %}>
+    <img src="{{ include.hl.image }}" />
+    <span class="title">{{ include.hl.name }} - {{ include.hl.type }}</span>
+    <p class="description">{{ include.hl.description }}</p>
+    <div>
+        {% for link in include.hl.links %}
+        <a href="{{ link.href }}" target="_blank">
+            {{ link.name }}
+        </a>
+        {% endfor %}
+    </div>
+</label>

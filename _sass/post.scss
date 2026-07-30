@@ -1,0 +1,98 @@
+@use 'variables' as *;
+
+// Page Blog
+
+h2 a {
+	color: $primary;
+}
+
+// Blog post specific
+
+#post-content {
+	picture {
+		img {
+			width: 80%;
+			margin: 0 auto;
+			display: block;
+		}
+	}
+}
+
+.author {
+	color: $accent;
+	font-weight: bold;
+	text-decoration: none;
+
+	&:hover {
+		color: $accent;
+	}
+}
+
+// Code specific
+
+.shiki {
+	border-left-width: 4px;
+	border-left-style: solid;
+	border-bottom-right-radius: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+	.shiki, .shiki span {
+		color: var(--shiki-dark) !important;
+		background-color: var(--shiki-dark-bg) !important;
+	}
+}
+
+.language-csharp {
+	border-left-color:  #512bd4;
+}
+.language-json {
+	border-left-color: #f7df1e;
+}
+.language-go {
+	border-left-color: #00add8;
+}
+.language-gdscript {
+	border-left-color: #478cbf;
+}
+
+pre {
+	padding: 20px;
+}
+code {
+    display: inline-block;
+	font-family: $font-code;
+	font-size: 0.875rem;
+	width: 100%;
+    text-wrap-mode: nowrap;
+    overflow-inline: auto;
+}
+
+// Table specific
+
+table {
+	font-family: $font-text;
+	width: 100%;
+	border-collapse: collapse;
+	color: $text;
+}
+th {
+	padding: 0.5em 1em;
+	border: 1px solid $primary;
+	color: $text;
+	background: $primary;
+}
+td {
+	padding: 0.5em 1em;
+	border: 1px solid $primary;
+}
+tbody {
+	tr {
+		&:nth-child(even) {
+			background: $background-variant-a;
+		}
+		&:nth-child(odd) {
+			background: $background-variant-b;
+		}
+	}
+}

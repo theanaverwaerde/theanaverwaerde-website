@@ -9,7 +9,20 @@ You can see the website here: <https://www.theanaverwaerde.dev/>
 - [GCC](https://gcc.gnu.org/install/) and [Make](https://www.gnu.org/software/make/) (check versions using `gcc -v`,`g++ -v`, and `make -v`)
 - [libvips](https://libvips.github.io/libvips/install.html) (check versions using `vips -v`)
 
+## Link drafts
+
+Create a *ignored by git*
+```bash
+ln -s  'cloudfile/_drafts' .
+```
+
+```bash
+ln -s  'cloudfile/imagesDraft' .
+```
+
 ## Run
+
+**Prefer use Zed tasks**
 
 Run:
 

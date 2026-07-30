@@ -8,9 +8,6 @@ permalink: /this
 
 # This
 
-A special thanks to [Alex Hyett](https://www.alexhyett.com), because the structure of this website is inspired by his website.
-I was blocked and went round in circles, but then I became a fan of what he had achieved.
-
 If you want to know how I built this website you can check [source code](https://github.com/theanaverwaerde/theanaverwaerde-website).
 
 ## Hosting and CI/CD

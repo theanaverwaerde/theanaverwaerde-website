@@ -6,7 +6,7 @@ permalink: /ideas
 
 <!-- On this page I put my todo / my futures projects -->
 
-{% assign update = '2026-07-27' | date: '%A %d %B %Y' %}
+{% assign update = '2026-07-30' | date: '%A %d %B %Y' %}
 
 # Ideas
 
@@ -15,7 +15,8 @@ So many projects I want to do, so my To Do list is here
 Last updated: **{{ update }}**.
 
 ## 🌐 This site
-- Mobile friendly
+- More accessibility (for screen reader)
+- Add feature on code block on the post (like copy the code with a button)
 
 ## 🎨 Streaming
 - An overlay for streaming with OBS

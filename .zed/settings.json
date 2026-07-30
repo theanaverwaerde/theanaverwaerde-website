@@ -6,5 +6,7 @@
     "node_modules",
     "Gemfile.lock",
     "package-lock.json",
-  ]
+    // Exclude "style.scss" to avoid false error on @use cause by --- 
+    "style.scss"
+  ],
 }

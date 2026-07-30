@@ -1,0 +1,316 @@
+@use 'variables' as *;
+
+@use 'home';
+@use 'post';
+@use 'not-found';
+
+html {
+	background-color: $background;
+	@include mobile {
+        &:has(.menu-toggle:checked) {
+            overflow: hidden;
+        }
+	}
+}
+
+body {
+	margin: 0;
+	min-height: 100dvh;
+}
+
+h1 {
+	font-size: 2.25rem;
+	font-family: $font-title;
+	font-style: normal;
+	color: $text;
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-family: $font-title;
+	font-style: normal;
+	color: $text;
+}
+
+h3 {
+	font-size: 1.125rem;
+	font-family: $font-title;
+	font-style: normal;
+	color: $text;
+}
+
+h4 {
+	font-size: 1rem;
+	font-family: $font-title;
+	font-style: normal;
+	color: $text;
+}
+
+h5 {
+	font-size: 0.875rem;
+	font-family: $font-title;
+	font-style: normal;
+	color: $text;
+}
+
+p {
+	font-size: 1rem;
+	font-family: $font-text;
+	font-style: normal;
+	color: $text;
+
+}
+a {
+    font-family: $font-text;
+	color: $primary;
+	&:hover {
+		color: $secondary;
+	}
+
+	&[href^="http://"]:not(:has(svg)),
+	&[href^="https://"]:not([href^="https://www.theanaverwaerde.dev"]):not(:has(svg)) {
+    	&::after{
+            content: "";
+            display: inline-block;
+            width: 1.2rem;
+            height: 1.2rem;
+            margin-bottom: -0.3rem;
+            margin-right: 3px;
+
+            background-color: $primary;
+
+            mask-image: url("/icons/external-link.svg");
+            mask-size: 1.2rem 1.2rem;
+            mask-repeat: no-repeat;
+	    }
+		&:hover::after {
+			background-color: $secondary;
+		}
+	}
+}
+
+li {
+	font-size: 1rem;
+	font-family: $font-text;
+	font-style: normal;
+	color: $text;
+	a {
+		color: $primary;
+		&:hover {
+			color: $secondary;
+		}
+	}
+}
+
+strong {
+	color: $accent;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: $header-height;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 20px;
+	background-color: $background;
+
+	#header-left {
+		a {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			text-decoration: none;
+			gap: 20px;
+		}
+	}
+
+	#logo {
+		width: 50px;
+		fill: $text;
+	}
+
+	span#header-title {
+		font-size: 1.125rem;
+		font-family: $font-text;
+		font-style: normal;
+		font-weight: 700;
+		text-align: center;
+		color: $text;
+	}
+
+	#header-right {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.navigation {
+		font-size: 0.875rem;
+		font-family: $font-text;
+		font-style: normal;
+		text-decoration: none;
+		color: $text;
+		margin-right: 20px;
+
+		&:hover {
+			color: $text;
+			text-decoration: underline;
+		}
+
+	}
+
+	.social-media-icon {
+		fill: $text;
+		width: 20px;
+		height: 20px;
+
+		&:hover {
+			fill: $text;
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	.menu-toggle, .burger {
+        display: none;
+	}
+
+	@include mobile {
+		.burger {
+            cursor: pointer;
+
+            width: 24px;
+            height: 18px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            span {
+                display: block;
+                height: 3px;
+                background: $text;
+            }
+		}
+
+        #header-right {
+            display: none;
+
+            flex: 1;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+
+            .navigation {
+                flex: 0 0 100%;
+                text-align: center;
+                margin: 0;
+
+                font-size: 1.125rem;
+            }
+
+            .navigation + .navigation {
+                margin-top: 24px;
+            }
+
+            .social-media-icon {
+                flex: 0 0 auto;
+                width: 30px;
+                height: 30px;
+                margin-top: 48px;
+            }
+        }
+
+        &:has(.menu-toggle:checked) {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+           	height: unset;
+            flex-direction: column;
+            padding: 48px 0;
+            z-index: 100;
+
+            #header-right {
+                display: flex;
+            }
+
+            .burger {
+                width: 35px;
+                height: 24px;
+
+                span{
+                    &:nth-child(1) {
+                        transform: translateY(10.5px) rotate(45deg);
+                    }
+                    &:nth-child(2) {
+                        opacity: 0;
+                    }
+                    &:nth-child(3) {
+                        transform: translateY(-10.5px) rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+#content {
+	max-width: $mobile-size;
+	margin: 0 auto;
+	min-height: calc(100dvh - $footer-height - $header-height);
+    @include mobile {
+        padding: 0 16px;
+    }
+}
+
+
+footer {
+	max-width: $mobile-size;
+	margin: auto auto 0 auto;
+	display: flex;
+	flex-direction: column;
+	height: $footer-height;
+	nav {
+		align-self: center;
+
+		ul {
+			gap: 20px;
+			list-style-type: none;
+			display: flex;
+			flex-direction: row;
+			margin: 0;
+			padding: 10px;
+
+			li {
+				a {
+					font-size: 0.75rem;
+					font-style: normal;
+					text-decoration: none;
+					color: $text;
+
+					&:hover {
+						color: $text;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+
+	span#copyright {
+		font-size: 0.625rem;
+		font-family: $font-text;
+		font-style: normal;
+		color: $text;
+
+		@include mobile {
+            padding: 0 8px;
+        }
+	}
+}
