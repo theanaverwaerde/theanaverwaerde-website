@@ -14,11 +14,41 @@ end
 
 def highlight_code(code, lang)
   js_script = <<~JS
-    const { codeToHtml } = require('shiki');
+    const { createHighlighter } = require('shiki');
+    const yaml = require('js-yaml');
 
     async function run() {
       try {
-        const html = await codeToHtml(#{code.to_json}, {
+        let highlighter;
+
+        if ('#{lang}' == 'rpy')
+        {
+          const url = "https://raw.githubusercontent.com/renpy/vscode-language-renpy/refs/heads/master/syntaxes/renpy.tmLanguage.yaml";
+          const res = await fetch(url);
+          if (!res.ok) {
+            throw new Error(`Failed to fetch grammar: ${res.statusText}`);
+          }
+
+          const yamlText = await res.text();
+          const json = JSON.parse(JSON.stringify(yaml.load(yamlText), null, 2), 'utf8');
+
+          highlighter = await createHighlighter({
+            langs: [json],
+            langAlias: {
+                rpy: "Ren'Py",
+                rpym: "Ren'Py",
+              },
+            themes: ['github-light', 'github-dark'],
+          });
+        }
+        else {
+          highlighter = await createHighlighter({
+            langs: ['#{lang}'],
+            themes: ['github-light', 'github-dark'],
+          });
+        }
+
+        const html = await highlighter.codeToHtml(#{code.to_json}, {
           lang: '#{lang}',
           themes: {
             light: 'github-light',
