@@ -66,6 +66,9 @@ a {
 	&:hover {
 		color: $secondary;
 	}
+	&:has(strong){
+	    color: $accent;
+	}
 
 	&[href^="http://"]:not(:has(svg)),
 	&[href^="https://"]:not([href^="https://www.theanaverwaerde.dev"]):not(:has(svg)) {
@@ -86,6 +89,9 @@ a {
 		&:hover::after {
 			background-color: $secondary;
 		}
+		&:has(strong)::after{
+		    background-color: $accent;
+		}
 	}
 }
 
@@ -102,7 +108,7 @@ li {
 	}
 }
 
-strong {
+:not(a) > strong {
 	color: $accent;
 }
 
@@ -261,6 +267,7 @@ header {
 }
 
 #content {
+    display: flow-root;
 	max-width: $mobile-size;
 	margin: 0 auto;
 	min-height: calc(100dvh - $footer-height - $header-height);

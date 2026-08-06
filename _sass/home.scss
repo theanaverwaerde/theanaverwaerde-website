@@ -80,6 +80,8 @@
         margin-left: 10px;
     }
 
+    user-select: none;
+
     &:has(input:checked) {
         cursor: default;
         text-align: justify;
@@ -108,6 +110,8 @@
         p, div {
             display: block;
         }
+
+        user-select: unset;
 
         @include mobile {
             display: flex;
