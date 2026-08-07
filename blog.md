@@ -2,6 +2,7 @@
 layout: default
 title: Blog
 permalink: /blog
+css: post
 ---
 
 <!-- On this page you can see all my latest posts -->

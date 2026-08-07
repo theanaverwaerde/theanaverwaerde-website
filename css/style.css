@@ -1,12 +1,28 @@
-@use 'variables' as *;
+@import "https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400&family=Quicksand:wght@400..700&family=Fira+Code&display=swap";
 
-@use 'home';
-@use 'post';
-@use 'not-found';
+:root {
+	--primary: #7acdb9;
+	--secondary: #60e294;
+	--accent: #bd92d8;
+	--background: #fcfffa;
+	--bg-variant-a: #f5f7fa;
+	--bg-variant-b: #e9f6f2;
+	--text: #171a26;
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--primary: #60e294;
+		--secondary: #7acdb9;
+		--background: #171a26;
+		--bg-variant-a: #23262f;
+		--bg-variant-b: #1b1e27;
+		--text: #fcfffa;
+	}
+}
 
 html {
-	background-color: $background;
-	@include mobile {
+	background-color: var(--background);
+	@media (max-width: 800px) {
         &:has(.menu-toggle:checked) {
             overflow: hidden;
         }
@@ -20,54 +36,54 @@ body {
 
 h1 {
 	font-size: 2.25rem;
-	font-family: $font-title;
+	font-family: "Anek Malayalam", sans-serif;
 	font-style: normal;
-	color: $text;
+	color: var(--text);
 }
 
 h2 {
 	font-size: 1.5rem;
-	font-family: $font-title;
+	font-family: "Anek Malayalam", sans-serif;
 	font-style: normal;
-	color: $text;
+	color: var(--text);
 }
 
 h3 {
 	font-size: 1.125rem;
-	font-family: $font-title;
+	font-family: "Anek Malayalam", sans-serif;
 	font-style: normal;
-	color: $text;
+	color: var(--text);
 }
 
 h4 {
 	font-size: 1rem;
-	font-family: $font-title;
+	font-family: "Anek Malayalam", sans-serif;
 	font-style: normal;
-	color: $text;
+	color: var(--text);
 }
 
 h5 {
 	font-size: 0.875rem;
-	font-family: $font-title;
+	font-family: "Anek Malayalam", sans-serif;
 	font-style: normal;
-	color: $text;
+	color: var(--text);
 }
 
 p {
 	font-size: 1rem;
-	font-family: $font-text;
+	font-family: "Quicksand", sans-serif;
 	font-style: normal;
-	color: $text;
+	color: var(--text);
 
 }
 a {
-    font-family: $font-text;
-	color: $primary;
+    font-family: "Quicksand", sans-serif;
+	color: var(--primary);
 	&:hover {
-		color: $secondary;
+		color: var(--secondary);
 	}
 	&:has(strong){
-	    color: $accent;
+	    color: var(--accent);
 	}
 
 	&[href^="http://"]:not(:has(svg)),
@@ -80,36 +96,36 @@ a {
             margin-bottom: -0.3rem;
             margin-right: 3px;
 
-            background-color: $primary;
+            background-color: var(--primary);
 
             mask-image: url("/icons/external-link.svg");
             mask-size: 1.2rem 1.2rem;
             mask-repeat: no-repeat;
 	    }
 		&:hover::after {
-			background-color: $secondary;
+			background-color: var(--secondary);
 		}
 		&:has(strong)::after{
-		    background-color: $accent;
+		    background-color: var(--accent);
 		}
 	}
 }
 
 li {
 	font-size: 1rem;
-	font-family: $font-text;
+	font-family: "Quicksand", sans-serif;
 	font-style: normal;
-	color: $text;
+	color: var(--text);
 	a {
-		color: $primary;
+		color: var(--primary);
 		&:hover {
-			color: $secondary;
+			color: var(--secondary);
 		}
 	}
 }
 
 :not(a) > strong {
-	color: $accent;
+	color: var(--accent);
 }
 
 header {
@@ -117,11 +133,11 @@ header {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	height: $header-height;
+	height: 60px;
 	max-width: 800px;
 	margin: 0 auto;
 	padding: 0 20px;
-	background-color: $background;
+	background-color: var(--background);
 
 	#header-left {
 		a {
@@ -135,16 +151,16 @@ header {
 
 	#logo {
 		width: 50px;
-		fill: $text;
+		fill: var(--text);
 	}
 
 	span#header-title {
 		font-size: 1.125rem;
-		font-family: $font-text;
+		font-family: "Quicksand", sans-serif;
 		font-style: normal;
 		font-weight: 700;
 		text-align: center;
-		color: $text;
+		color: var(--text);
 	}
 
 	#header-right {
@@ -156,26 +172,26 @@ header {
 
 	.navigation {
 		font-size: 0.875rem;
-		font-family: $font-text;
+		font-family: "Quicksand", sans-serif;
 		font-style: normal;
 		text-decoration: none;
-		color: $text;
+		color: var(--text);
 		margin-right: 20px;
 
 		&:hover {
-			color: $text;
+			color: var(--text);
 			text-decoration: underline;
 		}
 
 	}
 
 	.social-media-icon {
-		fill: $text;
+		fill: var(--text);
 		width: 20px;
 		height: 20px;
 
 		&:hover {
-			fill: $text;
+			fill: var(--text);
 			width: 20px;
 			height: 20px;
 		}
@@ -185,7 +201,7 @@ header {
         display: none;
 	}
 
-	@include mobile {
+	@media (max-width: 800px) {
 		.burger {
             cursor: pointer;
 
@@ -199,7 +215,7 @@ header {
             span {
                 display: block;
                 height: 3px;
-                background: $text;
+                background: var(--text);
             }
 		}
 
@@ -268,21 +284,21 @@ header {
 
 #content {
     display: flow-root;
-	max-width: $mobile-size;
+	max-width: 800px;
 	margin: 0 auto;
-	min-height: calc(100dvh - $footer-height - $header-height);
-    @include mobile {
+	min-height: calc(100dvh - 60px - 60px); /* minus header and footer height */
+    @media (max-width: 800px) {
         padding: 0 16px;
     }
 }
 
 
 footer {
-	max-width: $mobile-size;
+	max-width: 800px;
 	margin: auto auto 0 auto;
 	display: flex;
 	flex-direction: column;
-	height: $footer-height;
+	height: 60px;
 	nav {
 		align-self: center;
 
@@ -299,10 +315,10 @@ footer {
 					font-size: 0.75rem;
 					font-style: normal;
 					text-decoration: none;
-					color: $text;
+					color: var(--text);
 
 					&:hover {
-						color: $text;
+						color: var(--text);
 						text-decoration: underline;
 					}
 				}
@@ -312,11 +328,11 @@ footer {
 
 	span#copyright {
 		font-size: 0.625rem;
-		font-family: $font-text;
+		font-family: "Quicksand", sans-serif;
 		font-style: normal;
-		color: $text;
+		color: var(--text);
 
-		@include mobile {
+		@media (max-width: 800px) {
             padding: 0 8px;
         }
 	}

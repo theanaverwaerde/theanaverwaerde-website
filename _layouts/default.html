@@ -20,10 +20,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#60e294">
+    {% assign pagecss = page.css | join: '$' | split: '$' %}{% assign layoutcss = layout.css | join: '$' | split: '$' %}{% assign extra-css = pagecss | concat: layoutcss %}
+    <link href="/css/style.css" rel="stylesheet" type="text/css">{% for css in extra-css %}
+    <link href="/css/{{ css }}.css" rel="stylesheet" type="text/css">{% endfor %}
 
-    <link href="/style.css" rel="stylesheet" type="text/css">
-
-    <meta name="generator" content="Jekyll 4.3.4" />
+    <meta name="generator" content="Jekyll {{ jekyll.version }}" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">

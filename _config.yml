@@ -21,8 +21,3 @@ exclude:
 picture:
   source: images/
   output: images/
-
-sass:
-  sass_dir: _sass
-  style: expanded
-  sourcemap: development

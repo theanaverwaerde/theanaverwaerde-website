@@ -1,5 +1,6 @@
 ---
 layout: default
+css: post
 ---
 
 <h1>{{ page.title }}</h1>
@@ -7,7 +8,7 @@ layout: default
 <p class="post-meta">
   <time pubdate datetime="{{ page.date | date: "%Y-%m-%dT%H:%M:%S%z" }}" aria-label="Publication date">
     {{ page.date | date: "%B %-d, %Y" }}
-  </time> • By 
+  </time> • By
   <a href="/blog" class="author" rel="author" aria-label="Author Théana Verwaerde">Théana Verwaerde</a>
 </p>
 

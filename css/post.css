@@ -1,12 +1,10 @@
-@use 'variables' as *;
-
-// Page Blog
+/* Page Blog */
 
 h2 a {
-	color: $primary;
+	color: var(--primary);
 }
 
-// Blog post specific
+/* Blog post specific */
 
 #post-content {
 	picture {
@@ -19,16 +17,16 @@ h2 a {
 }
 
 .author {
-	color: $accent;
+	color: var(--accent);
 	font-weight: bold;
 	text-decoration: none;
 
 	&:hover {
-		color: $accent;
+		color: var(--accent);
 	}
 }
 
-// Code specific
+/* Code specific */
 
 .shiki {
 	border-left-width: 4px;
@@ -64,38 +62,38 @@ pre {
 }
 code {
     display: inline-block;
-	font-family: $font-code;
+	font-family: "Fira Code", monospace;
 	font-size: 0.875rem;
 	width: 100%;
     text-wrap-mode: nowrap;
     overflow-inline: auto;
 }
 
-// Table specific
+/* Table specific */
 
 table {
-	font-family: $font-text;
+	font-family: "Quicksand", sans-serif;
 	width: 100%;
 	border-collapse: collapse;
-	color: $text;
+	color: var(--text);
 }
 th {
 	padding: 0.5em 1em;
-	border: 1px solid $primary;
-	color: $text;
-	background: $primary;
+	border: 1px solid var(--primary);
+	color: var(--text);
+	background: var(--primary);
 }
 td {
 	padding: 0.5em 1em;
-	border: 1px solid $primary;
+	border: 1px solid var(--primary);
 }
 tbody {
 	tr {
 		&:nth-child(even) {
-			background: $background-variant-a;
+			background: var(--bg-variant-a);
 		}
 		&:nth-child(odd) {
-			background: $background-variant-b;
+			background: var(--bg-variant-b);
 		}
 	}
 }
