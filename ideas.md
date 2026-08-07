@@ -6,7 +6,7 @@ permalink: /ideas
 
 <!-- On this page I put my todo / my futures projects -->
 
-{% assign update = '2026-07-30' | date: '%A %d %B %Y' %}
+{% assign update = '2026-08-07' | date: '%A %d %B %Y' %}
 
 # Ideas
 
@@ -46,8 +46,10 @@ Last updated: **{{ update }}**.
 
 ## 🔧 DIY
 
-- A Stick Arcade Controller with Pandora Box inside for playing where I want if I have a screen and power supply
+- A Arcade Stick Controller with Pandora Box inside for playing where I want if I have a screen and power supply
 - Modding of Nintendo Switch Pro Controller
 - Buy and mod a Gameboy
+- Building a homelab
+- Creating my own Arcade Stick compatible with all consoles! (To mainly play GGST on Xbox/PS5/MacOS)
 
 Inspired by [aboutideasnow.com](https://aboutideasnow.com/about).

@@ -6,7 +6,7 @@ permalink: /now
 
 <!-- On this page I put what I what to highlight -->
 
-{% assign update = '2026-07-27' | date: '%A %d %B %Y' %}
+{% assign update = '2026-08-07' | date: '%A %d %B %Y' %}
 
 # Now
 
@@ -25,6 +25,5 @@ Last updated: **{{ update }}**.
 
 - 💜 I making a romance game for [ROMANCE JAM 2026](https://itch.io/jam/romance-jam-2026) with 3 others peoples on [Ren'py](https://www.renpy.org)
 - 🕹️ I developping a mobile game with [MonoGame](https://monogame.net) and [Nakama](https://heroiclabs.com/nakama/)
-- 🎨 Re design this website
 
 This [/now](https://nownownow.com/about) page was inspired by [Derek Silvers](https://sivers.org/)!
