@@ -22,3 +22,13 @@
       href: https://theanaverwaerde.itch.io/low-signal
     - name: View Source Code
       href: https://github.com/theanaverwaerde/low-signal-ld59
+- name: Witch & Sweets
+  type: Game Jam
+  description: |
+       Why make a Visual Novel game without Ren'py?! So this is a game made with Ren'py a Visual Novel Engine, we can use Python on it!
+       This is a game from a Game Jam the Spooktober 2026 for a duration of a month with 2 friends. I learned a lot of about Python and Renpy.
+       The game has two main minigames cooking and backey sales, which are easily customizable so we can reuse them along the game related to the scenario.
+  image: https://img.itch.zone/aW1nLzMwNDIwNzY5LnBuZw==/315x250%23c/tzwPmf.png
+  links:
+    - name: Play on itch.io
+      href: https://cochiz.itch.io/witchandsweets

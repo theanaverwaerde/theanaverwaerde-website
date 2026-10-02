@@ -87,7 +87,7 @@ a {
 	}
 
 	&[href^="http://"]:not(:has(svg)),
-	&[href^="https://"]:not([href^="https://www.theanaverwaerde.dev"]):not(:has(svg)) {
+	&[href^="https://"]:not([href^="https://theanaverwaerde.dev"]):not(:has(svg)) {
     	&::after{
             content: "";
             display: inline-block;

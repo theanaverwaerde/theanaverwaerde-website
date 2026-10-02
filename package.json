@@ -1,7 +1,7 @@
 {
   "name": "theanaverwaerde-website",
   "version": "1.0.0",
-  "description": "You can see the website here: <https://www.theanaverwaerde.dev/>",
+  "description": "You can see the website here: <https://theanaverwaerde.dev/>",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

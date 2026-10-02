@@ -70,7 +70,7 @@ This is an exemple with an id encoded in base64
     - Encode it to base64
     - Send it with data of your first page
 
-    `GET https://www.theanaverwaerde.dev/api/data`
+    `GET https://theanaverwaerde.dev/api/data`
 
     ```json
 {
@@ -85,7 +85,7 @@ This is an exemple with an id encoded in base64
     - Get the last ID of your request
     - Send it with data of your page
 
-    `GET https://www.theanaverwaerde.dev/api/data?cursor=OTk5`
+    `GET https://theanaverwaerde.dev/api/data?cursor=OTk5`
 
     ```json
 {

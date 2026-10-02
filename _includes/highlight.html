@@ -2,7 +2,7 @@
     <input type="radio" name="highlight"  {% if include.checked %}checked{% endif %}>
     <img src="{{ include.hl.image }}" />
     <span class="title">{{ include.hl.name }} - {{ include.hl.type }}</span>
-    <p class="description">{{ include.hl.description }}</p>
+    <p class="description">{{ include.hl.description | newline_to_br }}</p>
     <div>
         {% for link in include.hl.links %}
         <a href="{{ link.href }}" target="_blank">

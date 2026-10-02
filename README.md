@@ -1,6 +1,6 @@
 # Théana Verwaerde's personal website
 
-You can see the website here: <https://www.theanaverwaerde.dev/>
+You can see the website here: <https://theanaverwaerde.dev/>
 
 ## Requirements
 
