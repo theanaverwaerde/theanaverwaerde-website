@@ -6,7 +6,7 @@ permalink: /now
 
 <!-- On this page I put what I what to highlight -->
 
-{% assign update = '2026-09-01' | date: '%A %d %B %Y' %}
+{% assign update = '2026-10-02' | date: '%A %d %B %Y' %}
 
 # Now
 

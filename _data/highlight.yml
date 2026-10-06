@@ -1,9 +1,31 @@
+- name: Memories for A5-P1
+  type: Game Jam
+  description: |
+    My third game with Godot, made in 48 hours for the Wholesome Games Game Jam 2026, with the theme 'Analog'.
+    I spent many times understanding and working with the Vehicule Node to do a cool vacuum robot physics (yes, because in this game you are playing a vacuum robot).
+    After, I worked on a simple but rewarding thing: the dirty layer! With a camera and viewport texture, I captured the robot's movement and subtracted it with a dirty map via a shader. Additionally, I add position data to the shader to handle other objects in the area like carpets. As a result, we clean the ground just by moving or vacuuming!
+  image: https://img.itch.zone/aW1nLzMwNTM1MTY4LnBuZw==/315x250%23c/QIS7Q5.png
+  links:
+    - name: Play on itch.io
+      href: https://theanaverwaerde.itch.io/memories-for-a5-p1
+    - name: View Source Code
+      href: https://github.com/theanaverwaerde/wholesome-games-game-jam-2026
+- name: Witch & Sweets
+  type: Game Jam
+  description: |
+    Why make a Visual Novel game without Ren'py?! So this is a game made with Ren'py a Visual Novel Engine, we can use Python on it!
+    This is a game from a Game Jam: the Spooktober 2026. For a duration of a month with 2 friends. I learned a lot about Python and Renpy.
+    The game has two main minigames cooking and bakery sales, which are easily customizable so we can reuse them along the game related to the scenario.
+  image: https://img.itch.zone/aW1nLzMwNDIwNzY5LnBuZw==/315x250%23c/tzwPmf.png
+  links:
+    - name: Play on itch.io
+      href: https://cochiz.itch.io/witchandsweets
 - name: SMSMSG2 DX
   type: Game Jam
   description: |
-      Game made with Godot Engine in 50h for the Kenney Jam 2026, the theme was "Scale".
-      This is my second game with Godot and this time I've worked with a designer (no artist needed cause during the Kenney Jam we can use only pre-made assets by Kenney or KayKit).
-      I've learned a lot about Godot's animation tree. At first, it was complicated because it's quite different from Unity, but it was really enjoyable once I got the hang of it.
+    Game made with Godot Engine in 50 hours for the Kenney Jam 2026, the theme was "Scale".
+    This is my second game with Godot and this time I've worked with a designer (no artist needed cause during the Kenney Jam we can use only pre-made assets by Kenney or KayKit).
+    I've learned a lot about Godot's animation tree. At first, it was complicated because it's quite different from Unity, but it was really enjoyable once I got the hang of it.
   image: https://img.itch.zone/aW1nLzI4NTkwOTkzLnBuZw==/315x250%23c/HMWhtv.png
   links:
     - name: Play on itch.io
@@ -13,22 +35,12 @@
 - name: LowSignal
   type: Game Jam
   description: |
-      First game made with Godot Engine in 72h for the Ludum Dare 59 with an 3d artist (first time on Godot for her too), the theme was "Signal".
-      A lot of small difficulties from this first project, about performance (running an outdoor 3d game on web is quite heavy), the phone on the game because we are interacting in a 2d element with a 3d scene.
-      But a lot of new things were learned like the base of shader on Godot, all the node logic of Godot. Globally it's a really good experience this not be my last Godot game for a jam!
+    First game made with Godot Engine in 72h for the Ludum Dare 59 with an 3d artist (first time on Godot for her too), the theme was "Signal".
+    A lot of small difficulties from this first project, about performance (running an outdoor 3d game on web is quite heavy), the phone on the game because we are interacting in a 2d element with a 3d scene.
+    But a lot of new things were learned like the base of shader on Godot, all the node logic of Godot. Globally it's a really good experience this not be my last Godot game for a jam!
   image: https://img.itch.zone/aW1nLzI2ODI0MjA1LnBuZw==/315x250%23c/uQK1hf.png
   links:
     - name: Play on itch.io
       href: https://theanaverwaerde.itch.io/low-signal
     - name: View Source Code
       href: https://github.com/theanaverwaerde/low-signal-ld59
-- name: Witch & Sweets
-  type: Game Jam
-  description: |
-       Why make a Visual Novel game without Ren'py?! So this is a game made with Ren'py a Visual Novel Engine, we can use Python on it!
-       This is a game from a Game Jam the Spooktober 2026 for a duration of a month with 2 friends. I learned a lot of about Python and Renpy.
-       The game has two main minigames cooking and backey sales, which are easily customizable so we can reuse them along the game related to the scenario.
-  image: https://img.itch.zone/aW1nLzMwNDIwNzY5LnBuZw==/315x250%23c/tzwPmf.png
-  links:
-    - name: Play on itch.io
-      href: https://cochiz.itch.io/witchandsweets
