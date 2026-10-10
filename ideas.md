@@ -31,7 +31,7 @@ Last updated: **{{ update }}**.
 
 ## 🕹️ Game Development
 
-- A game on [PICO-8](https://www.lexaloffle.com/pico-8.php)
+- A game on [PICO-8](https://www.lexaloffle.com/pico-8.php) *Planned for LD60*
 - Complete Multiplayer architecture with spawning server on demand
 - A game in retro console (NES or Gameboy) in assembly
 - A game with [Pygame](https://www.pygame.org/)
